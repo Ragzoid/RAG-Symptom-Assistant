@@ -1,0 +1,9 @@
+name: deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI placeholder — customize as needed"
