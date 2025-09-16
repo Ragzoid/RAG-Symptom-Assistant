@@ -1,0 +1,12 @@
+# core
+gradio
+chromadb
+sentence-transformers
+transformers[torch]
+torch
+accelerate
+uvicorn
+fastapi
+pydantic
+requests
+wandb
