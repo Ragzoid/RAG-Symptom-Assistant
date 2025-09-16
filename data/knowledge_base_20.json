@@ -1,0 +1,361 @@
+{
+  "fever": {
+    "symptoms": ["elevated body temperature", "chills", "sweating", "weakness", "headache"],
+    "questions": [
+      "How many days have you had a fever?",
+      "Do you have chills or sweating?",
+      "Are there any other symptoms such as cough, sore throat, rash, or vomiting?",
+      "Have you recently travelled or been exposed to someone sick?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Tulsi (Holy basil) decoction", "dosage": "1 cup twice daily", "quantity": "5 days (for demo)"},
+      {"medicine": "Giloy (Tinospora cordifolia) juice", "dosage": "30 ml once or twice daily", "quantity": "7 days"}
+    ],
+    "english": [
+      {"medicine": "Paracetamol (acetaminophen)", "dosage": "500 mg every 4–6 hours as needed, max 3–4 g/day (adult typical)", "quantity": "10 tablets (500 mg)"},
+      {"medicine": "Oral rehydration solution (ORS)", "dosage": "200–400 ml after each fever episode if dehydrated", "quantity": "1 liter pack"}
+    ]
+  },
+
+  "common_cold": {
+    "symptoms": ["runny nose", "sore throat", "sneezing", "mild cough", "nasal congestion"],
+    "questions": [
+      "When did symptoms start?",
+      "Do you have fever or body aches?",
+      "Is your cough dry or productive?",
+      "Any known allergies or chronic sinus issues?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Sitopaladi churna (as indicated for respiratory congestion)", "dosage": "1 tsp with honey twice daily", "quantity": "20 g"},
+      {"medicine": "Steam inhalation with eucalyptus/tulsi", "dosage": "inhalation 2–3 times daily", "quantity": "as needed"}
+    ],
+    "english": [
+      {"medicine": "Saline nasal spray", "dosage": "2–3 sprays per nostril up to 4 times daily", "quantity": "1 bottle"},
+      {"medicine": "Paracetamol 500 mg for pain/fever", "dosage": "as above", "quantity": "10 tablets"}
+    ]
+  },
+
+  "dry_cough": {
+    "symptoms": ["non-productive cough", "throat tickle", "worse at night"],
+    "questions": [
+      "How long have you had the cough?",
+      "Do you smoke or have COPD/asthma?",
+      "Is there any fever or shortness of breath?",
+      "Does anything trigger it (cold air, lying down)?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Sitopaladi churna with honey", "dosage": "1 tsp twice daily", "quantity": "20 g"},
+      {"medicine": "Honey + ginger (1 tsp + small slice ginger) twice daily", "dosage": "1 tsp honey with ginger", "quantity": "5–7 days"}
+    ],
+    "english": [
+      {"medicine": "Dextromethorphan syrup (OTC cough suppressant)", "dosage": "10–20 mg every 4 hours as needed, max per label (adult)", "quantity": "100 ml bottle"},
+      {"medicine": "Lozenges / throat lozenges", "dosage": "as needed", "quantity": "1 pack"}
+    ]
+  },
+
+  "productive_cough": {
+    "symptoms": ["cough with phlegm", "chest congestion", "possible fever"],
+    "questions": [
+      "What color is the sputum (clear, yellow, green, blood-streaked)?",
+      "Do you have shortness of breath or chest pain?",
+      "How long have you had it?",
+      "Any history of chronic lung disease?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Vasa (Adhatoda vasica) syrup or decoction", "dosage": "as per product instructions (demo)", "quantity": "1 bottle (demo)"},
+      {"medicine": "Tulsi decoction", "dosage": "1 cup twice daily", "quantity": "5 days"}
+    ],
+    "english": [
+      {"medicine": "Expectorant (guaifenesin) syrup", "dosage": "200–400 mg every 4 hours (adult typical), follow label", "quantity": "100 ml bottle"},
+      {"medicine": "Antibiotic only if bacterial infection (prescription)", "dosage": "depends on drug — see clinician", "quantity": "prescription required"}
+    ]
+  },
+
+  "sore_throat": {
+    "symptoms": ["throat pain", "difficulty swallowing", "scratchy throat"],
+    "questions": [
+      "Is there fever or swollen glands?",
+      "Do you have white patches on the throat?",
+      "Any hoarseness or change in voice?",
+      "How severe is the pain (mild/moderate/severe)?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Salt water gargle / turmeric (haldi) with warm water", "dosage": "gargle 2–3 times daily", "quantity": "as needed"},
+      {"medicine": "Licorice root (mulethi) decoction", "dosage": "gargle or sip as suitable", "quantity": "demo use"}
+    ],
+    "english": [
+      {"medicine": "Paracetamol or ibuprofen for pain relief", "dosage": "Paracetamol 500 mg every 4–6 hours or Ibuprofen 200–400 mg every 4–6 hours as needed (adult typical), follow max limits", "quantity": "10 tablets each (if used)"},
+      {"medicine": "Throat lozenges / sprays", "dosage": "as per label", "quantity": "1 pack"}
+    ]
+  },
+
+  "headache": {
+    "symptoms": ["pain in head", "pressing or throbbing sensation", "sensitivity to light or sound"],
+    "questions": [
+      "Where is the pain located (frontal, temporal, whole head)?",
+      "On a scale of 1–10 how severe is it?",
+      "Any nausea, visual changes, or neurological symptoms?",
+      "How long have you had these headaches?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Brahmi (Bacopa monnieri) tonic", "dosage": "as per product (demo)", "quantity": "30 ml (demo)"},
+      {"medicine": "Apply cool sesame oil at forehead (Lepa)", "dosage": "topical application", "quantity": "as needed"}
+    ],
+    "english": [
+      {"medicine": "Paracetamol 500 mg", "dosage": "as needed (adult typical)", "quantity": "10 tablets"},
+      {"medicine": "Ibuprofen 200–400 mg", "dosage": "as needed (adult typical)", "quantity": "10 tablets"}
+    ]
+  },
+
+  "migraine": {
+    "symptoms": ["severe unilateral throbbing headache", "nausea", "photophobia", "aura in some cases"],
+    "questions": [
+      "Do you get visual auras before headaches?",
+      "How long do attacks last?",
+      "What triggers your headaches (food, stress, sleep)?",
+      "Have you been prescribed migraine-specific meds before?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Shankhapushpi (as brain tonic) — adjunct therapy", "dosage": "as per product (demo)", "quantity": "30 days (demo)"},
+      {"medicine": "Nasya (medicated nasal oil) — only under practitioner supervision", "dosage": "practitioner-guided", "quantity": "demo"}
+    ],
+    "english": [
+      {"medicine": "NSAID (ibuprofen) or paracetamol for mild attacks", "dosage": "Ibuprofen 400 mg or Paracetamol 500–1000 mg (adult typical), follow label", "quantity": "10 tablets"},
+      {"medicine": "Triptans (prescription) for moderate–severe migraine", "dosage": "prescription only", "quantity": "as prescribed"}
+    ]
+  },
+
+  "allergic_rhinitis": {
+    "symptoms": ["sneezing", "nasal congestion", "itchy eyes", "runny nose"],
+    "questions": [
+      "Do symptoms vary with seasons or exposure to animals?",
+      "Any itchy eyes or skin rashes?",
+      "Do you use any antihistamines currently?",
+      "Any history of asthma?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Nasya with Anu taila (practitioner guidance)", "dosage": "practitioner-guided", "quantity": "demo"},
+      {"medicine": "Triphala for systemic support", "dosage": "1 tsp at night (demo)", "quantity": "30 days (demo)"}
+    ],
+    "english": [
+      {"medicine": "Oral antihistamine (cetirizine)", "dosage": "10 mg once daily (adult typical)", "quantity": "30 tablets"},
+      {"medicine": "Saline nasal irrigation", "dosage": "daily", "quantity": "1 bottle"}
+    ]
+  },
+
+  "indigestion_acid_reflux": {
+    "symptoms": ["heartburn", "bloating", "acid regurgitation", "belching"],
+    "questions": [
+      "When do symptoms usually occur (after meals, at night)?",
+      "Do spicy or fatty foods trigger it?",
+      "Any difficulty swallowing or weight loss?",
+      "Do you use antacids currently?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Trikatu (black pepper, long pepper, ginger) — digestive support", "dosage": "as per traditional guidance (demo)", "quantity": "30 days (demo)"},
+      {"medicine": "Amla (Indian gooseberry) preparations", "dosage": "1 tsp juice or powder daily", "quantity": "30 days (demo)"}
+    ],
+    "english": [
+      {"medicine": "Antacid (e.g., calcium carbonate)", "dosage": "as needed per label", "quantity": "1 bottle/pack"},
+      {"medicine": "H2 blocker or PPI (prescription for chronic cases)", "dosage": "prescription required", "quantity": "as prescribed"}
+    ]
+  },
+
+  "diarrhea": {
+    "symptoms": ["loose stools", "increased stool frequency", "abdominal cramps", "dehydration risk"],
+    "questions": [
+      "How many times per day are you passing loose stools?",
+      "Any blood in stool or high fever?",
+      "Any recent travel or food exposure?",
+      "Are you able to keep fluids down?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Hing (asafoetida) water or Hingvastak churna", "dosage": "as per traditional guidance (demo)", "quantity": "short course"},
+      {"medicine": "Bael (Aegle marmelos) decoction for acute diarrhea (traditional)", "dosage": "practitioner-guided", "quantity": "short course"}
+    ],
+    "english": [
+      {"medicine": "Oral rehydration solution (ORS)", "dosage": "200–400 ml after each loose stool", "quantity": "1–2 liters initial pack"},
+      {"medicine": "Loperamide (for non-bloody acute diarrhea in adults)", "dosage": "4 mg initially then 2 mg after each loose stool, up to 8 mg/day OTC (adult typical), follow label", "quantity": "10 tablets"}
+    ]
+  },
+
+  "constipation": {
+    "symptoms": ["infrequent bowel movements", "hard stools", "straining"],
+    "questions": [
+      "How many bowel movements per week do you have?",
+      "Any pain or blood with stools?",
+      "Are you taking any medications (opioids, iron) that cause constipation?",
+      "What is your typical fluid and fiber intake?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Triphala powder", "dosage": "1 tsp at night with warm water", "quantity": "30 days"},
+      {"medicine": "Castor oil (traditional mild laxative) — practitioner guidance", "dosage": "use under guidance", "quantity": "demo"}
+    ],
+    "english": [
+      {"medicine": "Bulk-forming laxative (psyllium husk)", "dosage": "as per label, usually 1 rounded teaspoon with water once daily", "quantity": "pack"},
+      {"medicine": "Osmotic laxative (polyethylene glycol) — adult dose per label", "dosage": "as per label", "quantity": "pack"}
+    ]
+  },
+
+  "urinary_tract_infection": {
+    "symptoms": ["burning on urination", "frequent urination", "lower abdominal discomfort"],
+    "questions": [
+      "Do you have fever or flank pain?",
+      "Any blood in the urine?",
+      "Are you pregnant or using any urinary devices?",
+      "Have you had UTIs before?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Cranberry-like traditional support / Punarnava decoction (traditional)", "dosage": "supportive (demo)", "quantity": "short course"},
+      {"medicine": "Goldenrod-like herbal support (practitioner-guided)", "dosage": "demo", "quantity": "short course"}
+    ],
+    "english": [
+      {"medicine": "Encourage fluids & refer to clinician for antibiotics", "dosage": "antibiotic selection and dosage require prescription", "quantity": "prescription required"},
+      {"medicine": "Phenazopyridine (urinary analgesic) — short-term OTC in some countries", "dosage": "follow label; short-term use only", "quantity": "as label"}
+    ]
+  },
+
+  "skin_rash_contact_dermatitis": {
+    "symptoms": ["localized redness", "itching", "blisters or scaling at contact area"],
+    "questions": [
+      "Where is the rash located?",
+      "Did you have exposure to new soap, plant, or chemical?",
+      "Is it spreading or localized?",
+      "Any fever or systemic symptoms?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Neem-based topical application (traditional)", "dosage": "topical use as indicated", "quantity": "ointment/pack"},
+      {"medicine": "Aloe vera gel for soothing", "dosage": "apply 2–3 times daily", "quantity": "tube/pack"}
+    ],
+    "english": [
+      {"medicine": "Topical hydrocortisone 1% (OTC mild steroid)", "dosage": "apply thin layer 1–2 times daily for short course", "quantity": "1 tube"},
+      {"medicine": "Oral antihistamine (cetirizine) for itching", "dosage": "10 mg once daily (adult typical)", "quantity": "30 tablets"}
+    ]
+  },
+
+  "joint_pain_osteoarthritis": {
+    "symptoms": ["joint ache", "stiffness in morning", "worse with activity"],
+    "questions": [
+      "Which joint(s) are affected?",
+      "Is the pain worse in the morning or after activity?",
+      "Any swelling, redness, or previous injury?",
+      "Any history of inflammatory arthritis?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Dashamoola preparations (traditional anti-inflammatory support)", "dosage": "practitioner-guided", "quantity": "30 days (demo)"},
+      {"medicine": "Topical sesame oil massage (Abhyanga)", "dosage": "topical application", "quantity": "as needed"}
+    ],
+    "english": [
+      {"medicine": "Paracetamol / NSAID (ibuprofen) for pain control", "dosage": "Paracetamol 500 mg or Ibuprofen 200–400 mg as needed (adult typical), follow max limits", "quantity": "10–20 tablets"},
+      {"medicine": "Topical NSAID gel", "dosage": "apply as per label", "quantity": "tube"}
+    ]
+  },
+
+  "eye_conjunctivitis": {
+    "symptoms": ["red eye", "tearing", "itching or discharge"],
+    "questions": [
+      "Is the discharge watery or purulent (pus-like)?",
+      "Is it in one eye or both eyes?",
+      "Any recent contact lens use or trauma?",
+      "Any associated fever or facial pain?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Triphaladi eye wash (traditional) — practitioner-guided", "dosage": "use under guidance", "quantity": "demo"},
+      {"medicine": "Rose water eye wash for soothing", "dosage": "gentle wash", "quantity": "as needed"}
+    ],
+    "english": [
+      {"medicine": "Artificial tears (lubricating drops)", "dosage": "as needed", "quantity": "1 bottle"},
+      {"medicine": "Topical antibiotic drops for bacterial conjunctivitis (prescription)", "dosage": "prescription required", "quantity": "as prescribed"}
+    ]
+  },
+
+  "ear_ache_otitis_media": {
+    "symptoms": ["ear pain", "reduced hearing", "possible fever"],
+    "questions": [
+      "Is there ear discharge?",
+      "Any recent upper respiratory infection?",
+      "Which ear is affected?",
+      "Any previous ear surgeries or perforation?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Warm sesame oil ear drops (karpuropan) — traditional; use cautiously", "dosage": "practitioner-guided", "quantity": "demo"},
+      {"medicine": "Herbal steam inhalation for congestion", "dosage": "as needed", "quantity": "demo"}
+    ],
+    "english": [
+      {"medicine": "Analgesic (paracetamol) for pain", "dosage": "as above", "quantity": "10 tablets"},
+      {"medicine": "Antibiotics if indicated (prescription)", "dosage": "prescription required", "quantity": "as prescribed"}
+    ]
+  },
+
+  "anxiety_mild": {
+    "symptoms": ["excessive worry", "restlessness", "sleep disturbance", "palpitations"],
+    "questions": [
+      "How long have you experienced anxiety symptoms?",
+      "Are there identifiable triggers?",
+      "Any impact on daily functioning?",
+      "Any history of panic attacks or medication use?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Ashwagandha (Withania somnifera) tonic", "dosage": "as per product (demo), commonly 300–500 mg extract twice daily", "quantity": "30 days (demo)"},
+      {"medicine": "Brahmi (Bacopa) as calming tonic", "dosage": "as per product (demo)", "quantity": "30 days (demo)"}
+    ],
+    "english": [
+      {"medicine": "Short-term use of anxiolytics requires prescription", "dosage": "prescription required", "quantity": "as prescribed"},
+      {"medicine": "Recommend therapy and lifestyle measures (sleep, exercise, CBT)", "dosage": "as recommended", "quantity": "ongoing"}
+    ]
+  },
+
+  "minor_burn": {
+    "symptoms": ["localized redness", "pain", "no deep tissue damage", "blistering in some cases"],
+    "questions": [
+      "How large and deep is the burn?",
+      "Is there any charring or exposed tissue?",
+      "How long ago did it occur?",
+      "Is tetanus up to date (if applicable)?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Aloe vera gel topical for soothing", "dosage": "apply thin layer 2–3 times daily", "quantity": "1 tube"},
+      {"medicine": "Turmeric paste (traditional antiseptic) — topical use with caution", "dosage": "topical (demo)", "quantity": "as needed"}
+    ],
+    "english": [
+      {"medicine": "Cool running water initially, topical sterile dressings", "dosage": "first aid", "quantity": "as needed"},
+      {"medicine": "Analgesic (paracetamol/ibuprofen) for pain", "dosage": "as above", "quantity": "10 tablets"}
+    ]
+  },
+
+  "vitamin_d_deficiency_basic_guidance": {
+    "symptoms": ["fatigue", "bone pain, muscle weakness (subtle)"],
+    "questions": [
+      "Any history of low sun exposure?",
+      "Any bone pain or frequent fractures?",
+      "Are you on any restrictive diet?",
+      "Have you had your vitamin D level tested?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Amla (Vitamin C rich) and nutrition support", "dosage": "dietary recommendation", "quantity": "ongoing"},
+      {"medicine": "Sun exposure advice (early morning sunlight)", "dosage": "10–15 min daily", "quantity": "ongoing"}
+    ],
+    "english": [
+      {"medicine": "Vitamin D3 supplements (common prophylactic adult dose variable)", "dosage": "typical over-the-counter doses 1000–2000 IU daily; therapeutic dosing requires test and clinician guidance", "quantity": "30 capsules (demo)"},
+      {"medicine": "Calcium supplementation if indicated (clinician advice)", "dosage": "as prescribed", "quantity": "as prescribed"}
+    ]
+  },
+
+  "mild_dehydration": {
+    "symptoms": ["thirst", "reduced urine output", "dry mouth", "dizziness"],
+    "questions": [
+      "Can you keep fluids down?",
+      "Any vomiting or severe diarrhea?",
+      "Any known chronic illnesses or medications?",
+      "Are you able to access ORS or fluids?"
+    ],
+    "ayurvedic": [
+      {"medicine": "Coconut water for electrolyte replacement (traditional supportive)", "dosage": "200–400 ml as tolerated", "quantity": "as needed"},
+      {"medicine": "Oral rehydration with jaggery and salt solution (traditional)", "dosage": "practitioner-guided", "quantity": "short course"}
+    ],
+    "english": [
+      {"medicine": "Oral rehydration solution (ORS)", "dosage": "200–400 ml after each loose stool or vomiting episode", "quantity": "1–2 liters initial supply"},
+      {"medicine": "Seek urgent care if severe dehydration or cannot tolerate fluids", "dosage": "clinical escalation", "quantity": "n/a"}
+    ]
+  }
+}
