@@ -1,9 +1,11 @@
 # run_in_colab.py
 """
-Colab-ready RAG Symptom Assistant
+Colab-ready RAG Symptom Assistant (Final Version)
 - Multi-turn clarifying questions
 - Final prescription with Ayurvedic + English medicines
-- Formatted output with educational summary and disclaimer
+- Educational summary + disclaimer
+- Thank-you message
+- "Start New Query" button
 """
 
 import sys
@@ -39,6 +41,7 @@ def generate_answer(top_cond: str) -> str:
     ayurvedic_meds = kb_entry.get("ayurvedic", [])
     english_meds = kb_entry.get("english", [])
 
+    # Format medicines
     ayurvedic_text = "\n".join([f"- {m['medicine']}: {m['dosage']} (Qty: {m['quantity']})"
                                 for m in ayurvedic_meds]) or "No Ayurvedic medicine available."
     english_text = "\n".join([f"- {m['medicine']}: {m['dosage']} (Qty: {m['quantity']})"
@@ -73,23 +76,31 @@ def handle_chat(message, chat_history, questions_asked, top_cond):
     kb_entry = KB.get(top_cond.lower(), {})
     clarifying_questions = kb_entry.get("questions", [])
 
-    # Ask next clarifying question if any
+    chat_history.append(("User", message))
+
+    # Ask next clarifying question
     next_q = None
     for q in clarifying_questions:
         if q not in questions_asked:
             next_q = q
             break
 
-    chat_history.append(("User", message))
-
     if next_q:
         questions_asked.append(next_q)
         chat_history.append(("Assistant", next_q))
         return chat_history, questions_asked, top_cond
     else:
-        # All questions asked → final prescription
+        # All questions answered → final prescription
         answer = generate_answer(top_cond)
         chat_history.append(("Assistant", answer))
+
+        # Thank-you message and prompt for next query
+        chat_history.append(("Assistant", "Thank you! You can click 'Start New Query' to check another symptom."))
+
+        # Reset state so new session can start
+        top_cond = None
+        questions_asked = []
+
         return chat_history, questions_asked, top_cond
 
 # -----------------------
@@ -107,12 +118,14 @@ with gr.Blocks() as demo:
         lines=2
     )
     btn = gr.Button("Send")
+    new_query_btn = gr.Button("Start New Query")  # reset button
 
     # State for multi-turn chat
     state_chat = gr.State([])
     state_questions = gr.State([])
     state_topcond = gr.State(None)
 
+    # Send button or enter key
     btn.click(
         handle_chat,
         inputs=[txt, state_chat, state_questions, state_topcond],
@@ -124,5 +137,16 @@ with gr.Blocks() as demo:
         outputs=[chatbot, state_questions, state_topcond]
     )
 
+    # Start New Query button resets the chat
+    def reset_chat():
+        return [], [], None
+
+    new_query_btn.click(
+        reset_chat,
+        inputs=[],
+        outputs=[chatbot, state_questions, state_topcond]
+    )
+
 # Launch Gradio with public URL
 demo.launch(share=True)
+
